@@ -1,0 +1,1580 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>绅士风度-礼仪生活影像志-温润有度的品牌视频官网</title>
+<meta name="description" content="绅士风度官方网站，深耕礼仪与品格生活方式的原创视频品牌，以专业内容生态陪伴创作者成长，记录真实而温暖的绅士日常。">
+<style>
+:root{
+  --ink:#1b2430;
+  --ink-soft:#3c4a5a;
+  --muted:#6b7a8c;
+  --line:#dfe5ec;
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --navy:#1f3a5f;
+  --navy-deep:#132a47;
+  --gold:#b8860b;
+  --gold-soft:#e8c97a;
+  --accent:#2f6f8f;
+  --radius:14px;
+  --shadow:0 8px 26px rgba(28,45,70,.09);
+  --shadow-lg:0 18px 44px rgba(28,45,70,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;scroll-padding-top:132px;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+details summary{cursor:pointer;}
+
+/* ===== 顶部双层吸顶 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:120;}
+.notice-bar{
+  background:linear-gradient(90deg,var(--navy-deep),var(--navy) 55%,#2a4a72);
+  color:#eef3f9;font-size:13.5px;letter-spacing:.3px;
+}
+.notice-inner{
+  max-width:1200px;margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:14px;overflow:hidden;
+}
+.notice-tag{
+  flex:0 0 auto;background:var(--gold-soft);color:#3a2a06;
+  font-weight:700;font-size:12px;padding:2px 9px;border-radius:20px;letter-spacing:1px;
+}
+.notice-track{flex:1 1 auto;overflow:hidden;white-space:nowrap;}
+.notice-track span{display:inline-block;padding-right:60px;animation:marquee 34s linear infinite;}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.notice-close{flex:0 0 auto;font-size:16px;opacity:.75;line-height:1;}
+.notice-close:hover{opacity:1;}
+
+header.site-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 2px 12px rgba(28,45,70,.05);
+}
+.header-inner{
+  max-width:1200px;margin:0 auto;padding:0 22px;
+  display:flex;align-items:center;gap:20px;height:70px;
+}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.logo-mark{
+  width:42px;height:42px;border-radius:12px;flex:0 0 auto;
+  background:linear-gradient(145deg,var(--navy),#2c537f 70%);
+  color:var(--gold-soft);display:grid;place-items:center;
+  font-size:19px;font-weight:700;letter-spacing:1px;
+  box-shadow:inset 0 0 0 1px rgba(232,201,122,.45);
+}
+.logo-text b{display:block;font-size:18px;letter-spacing:2px;line-height:1.2;}
+.logo-text small{display:block;font-size:10.5px;color:var(--muted);letter-spacing:2.6px;line-height:1.4;}
+nav.main-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex-wrap:wrap;}
+nav.main-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:var(--ink-soft);
+  transition:.22s;white-space:nowrap;
+}
+nav.main-nav a:hover{background:#eef3f9;color:var(--navy);}
+.header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;}
+.search-box{
+  display:flex;align-items:center;gap:7px;
+  background:#eef2f7;border:1px solid transparent;border-radius:22px;
+  padding:6px 6px 6px 14px;transition:.25s;
+}
+.search-box:focus-within{background:#fff;border-color:#b9cbdd;box-shadow:0 0 0 3px rgba(47,111,143,.12);}
+.search-box input{
+  border:none;background:none;outline:none;width:150px;font-size:14px;color:var(--ink);
+}
+.search-box input::placeholder{color:#93a2b3;}
+.search-box button{
+  background:var(--navy);color:#fff;border-radius:18px;font-size:13px;
+  padding:5px 14px;transition:.2s;
+}
+.search-box button:hover{background:var(--accent);}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:10px 22px;border-radius:26px;font-size:14.5px;font-weight:600;
+  transition:.24s;border:1px solid transparent;
+}
+.btn-primary{background:var(--navy);color:#fff;box-shadow:0 6px 18px rgba(31,58,95,.28);}
+.btn-primary:hover{background:var(--accent);transform:translateY(-2px);}
+.btn-ghost{border-color:#c8d5e3;color:var(--navy);background:#fff;}
+.btn-ghost:hover{border-color:var(--navy);background:#f1f5fa;}
+.btn-gold{background:linear-gradient(135deg,#c9971f,#a97a08);color:#fff;}
+.btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px);}
+.menu-toggle{display:none;font-size:22px;padding:6px 10px;border-radius:8px;color:var(--navy);}
+
+/* ===== 搜索反馈 ===== */
+.search-feedback{
+  max-width:1200px;margin:0 auto;padding:0 22px;
+}
+.search-feedback .inner{
+  display:none;margin-top:10px;background:#fff;border:1px solid var(--line);
+  border-left:4px solid var(--gold);border-radius:10px;padding:11px 16px;
+  font-size:14px;color:var(--ink-soft);box-shadow:var(--shadow);
+}
+.search-feedback .inner.show{display:block;animation:fadeDown .3s ease;}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ===== 首屏 ===== */
+.hero{
+  max-width:1200px;margin:0 auto;padding:44px 22px 20px;
+  display:grid;grid-template-columns:5.2fr 4.8fr;gap:44px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2.4px;color:var(--gold);font-weight:700;
+  border:1px solid var(--gold-soft);background:#fdf7e6;
+  border-radius:20px;padding:4px 14px;margin-bottom:16px;
+}
+h1{
+  font-size:clamp(30px,4vw,48px);line-height:1.28;letter-spacing:1px;
+  color:var(--navy-deep);font-weight:800;margin-bottom:14px;
+}
+h1 em{font-style:normal;color:var(--gold);position:relative;}
+.hero-sub{font-size:17px;color:var(--ink-soft);margin-bottom:18px;font-weight:600;letter-spacing:.5px;}
+.hero-desc{color:var(--muted);font-size:15px;line-height:1.95;margin-bottom:22px;text-align:justify;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:460px;}
+.stat{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:13px 10px;text-align:center;box-shadow:0 3px 10px rgba(28,45,70,.04);
+}
+.stat b{display:block;font-size:23px;color:var(--navy);letter-spacing:.5px;line-height:1.25;}
+.stat span{font-size:12.5px;color:var(--muted);letter-spacing:.6px;}
+.hero-visual{position:relative;}
+.hero-visual .frame{
+  border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);
+  border:1px solid #e3eaf2;position:relative;background:#dde5ee;
+}
+.hero-visual img{width:100%;height:auto;object-fit:cover;transition:transform .6s;}
+.hero-visual .frame:hover img{transform:scale(1.04);}
+.hero-badge{
+  position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;
+  padding:12px 18px;box-shadow:var(--shadow-lg);border:1px solid var(--line);
+  display:flex;align-items:center;gap:11px;max-width:250px;
+}
+.hero-badge .dot{
+  width:34px;height:34px;flex:0 0 auto;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold-soft),var(--gold));
+  display:grid;place-items:center;color:#fff;font-size:15px;font-weight:700;
+}
+.hero-badge b{display:block;font-size:13.5px;color:var(--navy);}
+.hero-badge span{font-size:11.5px;color:var(--muted);}
+
+/* ===== 通用 section ===== */
+section{max-width:1200px;margin:0 auto;padding:52px 22px;}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap;}
+.section-head h2{
+  font-size:clamp(22px,2.6vw,30px);color:var(--navy-deep);letter-spacing:1px;position:relative;
+  padding-left:16px;line-height:1.35;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:4px;
+  background:linear-gradient(var(--gold),var(--gold-soft));
+}
+.section-head p{color:var(--muted);font-size:14.5px;max-width:560px;}
+.section-head .more{font-size:14px;color:var(--accent);font-weight:600;white-space:nowrap;}
+.section-head .more:hover{text-decoration:underline;}
+
+/* ===== 焦点视频 ===== */
+.focus-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:22px;}
+.feature-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);background:#0d1a2b;transition:.3s;
+}
+.feature-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);}
+.feature-card img{width:100%;height:100%;object-fit:cover;min-height:340px;opacity:.94;transition:.5s;}
+.feature-card:hover img{transform:scale(1.05);}
+.feature-card .cap{
+  position:absolute;inset:auto 0 0 0;padding:26px 24px 22px;
+  background:linear-gradient(transparent,rgba(9,20,34,.9));
+  color:#fff;
+}
+.feature-card .cap .tag{
+  display:inline-block;background:var(--gold-soft);color:#3a2a06;
+  font-size:11.5px;font-weight:700;padding:3px 11px;border-radius:20px;letter-spacing:1px;margin-bottom:10px;
+}
+.feature-card .cap h3{font-size:21px;line-height:1.45;letter-spacing:.5px;margin-bottom:8px;}
+.feature-card .cap p{font-size:13.5px;opacity:.82;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.feature-card .cap .meta{display:flex;gap:14px;font-size:12.5px;opacity:.75;margin-top:11px;flex-wrap:wrap;}
+.focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:22px;}
+.side-video{
+  display:grid;grid-template-columns:44% 56%;background:#fff;border-radius:var(--radius);
+  overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 14px rgba(28,45,70,.05);
+  transition:.28s;
+}
+.side-video:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#c8d8e8;}
+.side-video .thumb{position:relative;overflow:hidden;background:#cfdae6;}
+.side-video .thumb img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.side-video:hover .thumb img{transform:scale(1.07);}
+.play-mini{
+  position:absolute;inset:0;display:grid;place-items:center;color:#fff;
+  font-size:26px;opacity:0;background:rgba(15,32,52,.32);transition:.3s;
+}
+.side-video:hover .play-mini{opacity:1;}
+.side-video .body{padding:16px 17px;display:flex;flex-direction:column;justify-content:center;}
+.side-video .body h3{font-size:15.5px;line-height:1.5;margin-bottom:6px;color:var(--ink);}
+.side-video .body p{font-size:12.8px;color:var(--muted);line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:9px;}
+.side-video .body .who{font-size:12px;color:var(--accent);font-weight:600;}
+.card-actions{display:flex;gap:6px;align-items:center;margin-top:9px;}
+.act{
+  display:inline-flex;align-items:center;gap:4px;font-size:12.5px;color:var(--muted);
+  padding:4px 9px;border-radius:16px;border:1px solid var(--line);transition:.2s;background:#fafcfe;
+}
+.act:hover{border-color:#b9cbdd;color:var(--navy);background:#eef4fa;}
+.act.liked{color:#c0392b;border-color:#f0c3bd;background:#fdf1f0;}
+.act.saved{color:var(--gold);border-color:var(--gold-soft);background:#fdf8ea;}
+.act i{font-style:normal;}
+
+/* ===== 视频流 ===== */
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.video-card{
+  background:var(--card);border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);box-shadow:0 4px 14px rgba(28,45,70,.05);
+  transition:.3s;display:flex;flex-direction:column;
+}
+.video-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#c8d8e8;}
+.video-card .cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#cfdae6;}
+.video-card .cover img{width:100%;height:100%;object-fit:cover;transition:.55s;}
+.video-card:hover .cover img{transform:scale(1.07);}
+.video-card .cover .dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(10,22,38,.8);color:#fff;
+  font-size:11.5px;padding:2px 8px;border-radius:5px;letter-spacing:.5px;
+}
+.video-card .cover .cat{
+  position:absolute;left:10px;top:10px;background:rgba(255,255,255,.92);color:var(--navy);
+  font-size:11.5px;font-weight:700;padding:2px 10px;border-radius:20px;letter-spacing:.5px;
+}
+.video-card .content{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1;}
+.video-card .content h3{font-size:16px;line-height:1.5;margin-bottom:7px;color:var(--ink);}
+.video-card .content p{font-size:13px;color:var(--muted);line-height:1.7;flex:1;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.video-card .tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 9px;}
+.video-card .tags span{font-size:11.5px;color:var(--accent);background:#eef5fa;padding:2px 9px;border-radius:12px;}
+.video-card .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px;}
+.author-mini{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-soft);}
+.avatar{
+  width:28px;height:28px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.5px;
+}
+
+/* ===== 专题 ===== */
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.topic-card{
+  border-radius:var(--radius);padding:24px 22px;color:#fff;position:relative;overflow:hidden;
+  min-height:210px;display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:var(--shadow);transition:.3s;
+}
+.topic-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);}
+.topic-card::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;
+  border-radius:50%;background:rgba(255,255,255,.12);
+}
+.topic-card:nth-child(1){background:linear-gradient(140deg,#1f3a5f,#2f6f8f);}
+.topic-card:nth-child(2){background:linear-gradient(140deg,#7a5a12,#b8860b);}
+.topic-card:nth-child(3){background:linear-gradient(140deg,#244b47,#3d7a6f);}
+.topic-card .status{
+  align-self:flex-start;font-size:11.5px;background:rgba(255,255,255,.2);
+  padding:3px 11px;border-radius:20px;letter-spacing:1px;margin-bottom:12px;
+}
+.topic-card h3{font-size:19px;line-height:1.45;margin-bottom:9px;letter-spacing:.5px;}
+.topic-card p{font-size:13px;opacity:.85;line-height:1.7;}
+.topic-card .sub{margin-top:14px;font-size:12.5px;opacity:.8;display:flex;gap:14px;flex-wrap:wrap;}
+
+/* ===== 创作者 ===== */
+.creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.creator-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;text-align:center;transition:.3s;box-shadow:0 4px 14px rgba(28,45,70,.05);
+  display:flex;flex-direction:column;
+}
+.creator-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#c8d8e8;}
+.creator-avatar{
+  width:74px;height:74px;border-radius:50%;margin:0 auto 13px;display:grid;place-items:center;
+  color:#fff;font-size:27px;font-weight:700;letter-spacing:1px;
+  box-shadow:0 8px 18px rgba(28,45,70,.18);border:3px solid #fff;
+}
+.creator-card h3{font-size:16.5px;margin-bottom:3px;color:var(--ink);}
+.creator-card .field{font-size:12.5px;color:var(--gold);font-weight:600;letter-spacing:.5px;margin-bottom:10px;}
+.creator-card p{font-size:12.8px;color:var(--muted);line-height:1.7;flex:1;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.creator-card .nums{display:flex;justify-content:center;gap:18px;margin:13px 0;font-size:12.5px;color:var(--ink-soft);}
+.creator-card .nums b{display:block;color:var(--navy);font-size:14.5px;}
+.creator-card .nums span{font-size:11.5px;color:var(--muted);}
+.link-btn{
+  font-size:13px;color:var(--accent);font-weight:600;border:1px solid #cfe0ee;
+  border-radius:20px;padding:6px 16px;transition:.2s;background:#f6fafd;
+}
+.link-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* ===== 故事随笔 ===== */
+.story-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.story{
+  background:#fff;border-radius:var(--radius);padding:24px;border:1px solid var(--line);
+  box-shadow:0 4px 14px rgba(28,45,70,.05);position:relative;transition:.3s;
+  display:flex;flex-direction:column;
+}
+.story:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.story .quotemark{
+  font-size:40px;line-height:1;color:var(--gold-soft);font-family:Georgia,serif;margin-bottom:2px;
+}
+.story h3{font-size:16.5px;color:var(--navy);margin-bottom:9px;line-height:1.5;}
+.story p{font-size:13.5px;color:var(--muted);line-height:1.85;flex:1;text-align:justify;}
+.story .sign{margin-top:14px;font-size:12.5px;color:var(--ink-soft);display:flex;align-items:center;gap:8px;border-top:1px dashed var(--line);padding-top:12px;}
+
+/* ===== 作品墙 ===== */
+.wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:108px;gap:14px;}
+.wall figure{
+  position:relative;border-radius:12px;overflow:hidden;background:#cfdae6;
+  box-shadow:0 4px 12px rgba(28,45,70,.08);
+}
+.wall figure img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.wall figure:hover img{transform:scale(1.08);}
+.wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:16px 12px 9px;font-size:12px;color:#fff;
+  background:linear-gradient(transparent,rgba(9,20,34,.82));letter-spacing:.5px;
+}
+.wall .big{grid-column:span 3;grid-row:span 3;}
+.wall .mid{grid-column:span 2;grid-row:span 2;}
+.wall .sm{grid-column:span 2;grid-row:span 1;}
+.wall .wide{grid-column:span 2;grid-row:span 2;}
+
+/* ===== 评价 ===== */
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.review{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;
+  box-shadow:0 4px 14px rgba(28,45,70,.05);transition:.3s;display:flex;flex-direction:column;
+}
+.review:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.review .stars{color:var(--gold);font-size:13.5px;letter-spacing:2px;margin-bottom:9px;}
+.review p{font-size:13.6px;color:var(--ink-soft);line-height:1.85;flex:1;text-align:justify;}
+.review .who{display:flex;align-items:center;gap:9px;margin-top:14px;border-top:1px dashed var(--line);padding-top:12px;}
+.review .who b{font-size:13px;color:var(--ink);display:block;line-height:1.4;}
+.review .who span{font-size:11.5px;color:var(--muted);}
+
+/* ===== 动态 & 榜单 ===== */
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start;}
+.timeline{border-left:2px solid #e2e9f1;padding-left:24px;position:relative;}
+.timeline li{position:relative;padding-bottom:24px;}
+.timeline li::before{
+  content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--gold);box-shadow:0 0 0 3px #fdf7e6;
+}
+.timeline li:last-child{padding-bottom:0;}
+.timeline time{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;}
+.timeline h3{font-size:15.5px;color:var(--ink);margin:4px 0 5px;}
+.timeline p{font-size:13.3px;color:var(--muted);line-height:1.75;}
+.rank-panel{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:8px 4px;
+  box-shadow:var(--shadow);
+}
+.rank-tabs{display:flex;gap:6px;padding:10px 14px 6px;}
+.rank-tabs button{
+  font-size:13px;padding:6px 14px;border-radius:18px;color:var(--muted);transition:.2s;
+}
+.rank-tabs button.on{background:var(--navy);color:#fff;font-weight:600;}
+.rank-list li{
+  display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #f0f4f8;
+  transition:.2s;
+}
+.rank-list li:last-child{border-bottom:none;}
+.rank-list li:hover{background:#f7fafd;}
+.rank-list .no{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;display:grid;place-items:center;
+  font-size:12.5px;font-weight:700;background:#eef3f9;color:var(--muted);
+}
+.rank-list li:nth-child(1) .no{background:linear-gradient(135deg,#c9971f,#a97a08);color:#fff;}
+.rank-list li:nth-child(2) .no{background:#8fa4bb;color:#fff;}
+.rank-list li:nth-child(3) .no{background:#c9a98a;color:#fff;}
+.rank-list .info{flex:1;min-width:0;}
+.rank-list .info b{display:block;font-size:13.8px;font-weight:600;color:var(--ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.rank-list .info span{font-size:11.8px;color:var(--muted);}
+.rank-list .score{font-size:12.5px;color:var(--gold);font-weight:700;flex:0 0 auto;}
+
+/* ===== FAQ ===== */
+.faq-wrap{max-width:900px;margin:0 auto;}
+.faq-wrap details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:11px;
+  overflow:hidden;transition:.25s;
+}
+.faq-wrap details[open]{border-color:#c8d8e8;box-shadow:var(--shadow);}
+.faq-wrap summary{
+  padding:16px 52px 16px 20px;font-size:15px;font-weight:600;color:var(--ink);
+  position:relative;list-style:none;
+}
+.faq-wrap summary::-webkit-details-marker{display:none;}
+.faq-wrap summary::after{
+  content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--gold);font-weight:400;transition:.25s;
+}
+.faq-wrap details[open] summary::after{content:"−";}
+.faq-wrap .ans{padding:0 20px 18px;font-size:13.8px;color:var(--muted);line-height:1.9;}
+
+/* ===== 合作 ===== */
+.partner-row{display:flex;flex-wrap:wrap;gap:14px;}
+.partner-row span{
+  flex:1 1 150px;text-align:center;padding:16px 12px;border-radius:12px;
+  background:#fff;border:1px solid var(--line);font-size:14px;color:var(--ink-soft);
+  letter-spacing:1px;transition:.26s;font-weight:600;
+}
+.partner-row span:hover{border-color:var(--navy);color:var(--navy);box-shadow:var(--shadow);transform:translateY(-3px);}
+
+/* ===== 联系/投稿 CTA ===== */
+.cta-band{
+  max-width:1200px;margin:0 auto;padding:0 22px;
+}
+.cta-inner{
+  background:linear-gradient(125deg,var(--navy-deep),var(--navy) 55%,#2f6f8f);
+  border-radius:22px;padding:44px 40px;color:#fff;display:grid;
+  grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+}
+.cta-inner::before{
+  content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;
+  border-radius:50%;background:rgba(232,201,122,.13);
+}
+.cta-inner::after{
+  content:"";position:absolute;right:70px;bottom:-80px;width:160px;height:160px;
+  border-radius:50%;background:rgba(255,255,255,.07);
+}
+.cta-inner h2{font-size:clamp(21px,2.4vw,27px);letter-spacing:1px;margin-bottom:11px;line-height:1.45;}
+.cta-inner p{font-size:14px;opacity:.85;line-height:1.9;max-width:560px;}
+.cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;position:relative;z-index:2;}
+
+/* ===== 页脚 ===== */
+footer.site-footer{
+  margin-top:56px;background:#0f1c2c;color:#a8b8c9;font-size:13.5px;
+}
+.footer-top{
+  max-width:1200px;margin:0 auto;padding:44px 22px 30px;
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:34px;
+}
+.footer-top h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:1.5px;font-weight:700;}
+.footer-top p{line-height:1.95;font-size:13px;}
+.footer-brand .logo-mark{width:38px;height:38px;font-size:17px;border-radius:10px;}
+.footer-brand .logo{margin-bottom:14px;}
+.footer-brand .logo-text b{color:#fff;font-size:16px;}
+.footer-brand .logo-text small{color:#7f93a8;}
+.footer-top ul li{padding:5px 0;}
+.footer-top ul li a:hover{color:var(--gold-soft);}
+.footer-top .contact-line{display:flex;gap:8px;padding:4px 0;line-height:1.8;}
+.footer-top .contact-line b{color:#dfe8f1;font-weight:600;flex:0 0 auto;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.09);padding:18px 22px;
+  max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;gap:14px;
+  flex-wrap:wrap;font-size:12.3px;color:#7f93a8;
+}
+.footer-bottom .links{display:flex;gap:18px;flex-wrap:wrap;}
+.footer-bottom a:hover{color:var(--gold-soft);}
+
+/* ===== Toast / 弹窗 / 回到顶部 ===== */
+#toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,26px);
+  background:rgba(15,28,44,.94);color:#fff;font-size:13.5px;padding:11px 24px;border-radius:26px;
+  opacity:0;pointer-events:none;transition:.35s;z-index:300;letter-spacing:.5px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:86vw;text-align:center;
+}
+#toast.show{opacity:1;transform:translate(-50%,0);}
+#backTop{
+  position:fixed;right:24px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--navy);color:#fff;display:grid;place-items:center;font-size:19px;
+  box-shadow:0 8px 22px rgba(31,58,95,.34);z-index:200;opacity:0;pointer-events:none;
+  transition:.3s;
+}
+#backTop.show{opacity:1;pointer-events:auto;}
+#backTop:hover{background:var(--accent);transform:translateY(-3px);}
+
+.modal-mask{
+  position:fixed;inset:0;background:rgba(12,24,40,.55);backdrop-filter:blur(3px);
+  display:none;place-items:center;z-index:400;padding:20px;
+}
+.modal-mask.show{display:grid;}
+.modal{
+  background:#fff;border-radius:18px;width:min(560px,100%);max-height:86vh;overflow:auto;
+  box-shadow:0 30px 70px rgba(0,0,0,.3);animation:pop .3s ease;
+}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.modal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 24px;border-bottom:1px solid var(--line);
+}
+.modal-head h3{font-size:17px;color:var(--navy);letter-spacing:.5px;}
+.modal-close{font-size:20px;color:var(--muted);padding:2px 8px;border-radius:8px;}
+.modal-close:hover{background:#f0f4f8;color:var(--ink);}
+.modal-body{padding:22px 24px;}
+.modal-body p{font-size:14px;color:var(--ink-soft);line-height:1.9;margin-bottom:14px;}
+.modal-body label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin:12px 0 6px;}
+.modal-body input,.modal-body textarea,.modal-body select{
+  width:100%;border:1px solid #d7e0ea;border-radius:10px;padding:10px 13px;
+  font-family:inherit;font-size:14px;outline:none;transition:.2s;background:#fbfdff;color:var(--ink);
+}
+.modal-body input:focus,.modal-body textarea:focus,.modal-body select:focus{
+  border-color:var(--accent);box-shadow:0 0 0 3px rgba(47,111,143,.12);background:#fff;
+}
+.modal-body textarea{resize:vertical;min-height:92px;}
+.modal-foot{display:flex;justify-content:flex-end;gap:10px;padding:0 24px 22px;}
+.share-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px;}
+.share-row button{
+  border:1px solid var(--line);border-radius:12px;padding:14px 6px;font-size:13px;
+  color:var(--ink-soft);transition:.24s;display:flex;flex-direction:column;align-items:center;gap:7px;
+}
+.share-row button:hover{border-color:var(--navy);color:var(--navy);background:#f6fafd;transform:translateY(-3px);}
+.share-row .ico{font-size:19px;}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .hero{grid-template-columns:1fr;gap:32px;}
+  .hero-visual{max-width:620px;margin:0 auto;width:100%;}
+  .focus-grid{grid-template-columns:1fr;}
+  .video-grid{grid-template-columns:repeat(2,1fr);}
+  .creator-grid{grid-template-columns:repeat(2,1fr);}
+  .story-wrap{grid-template-columns:1fr;}
+  .review-grid{grid-template-columns:repeat(2,1fr);}
+  .two-col{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .topic-grid{grid-template-columns:1fr 1fr;}
+  .cta-inner{grid-template-columns:1fr;padding:34px 26px;}
+  .cta-actions{justify-content:flex-start;}
+}
+@media (max-width:760px){
+  html{scroll-padding-top:112px;}
+  .menu-toggle{display:block;order:2;}
+  .header-inner{height:auto;min-height:62px;flex-wrap:wrap;padding:9px 16px;gap:10px;}
+  .header-tools{order:3;margin-left:auto;}
+  .search-box{display:none;}
+  nav.main-nav{
+    order:4;display:none;width:100%;flex-direction:column;align-items:stretch;
+    gap:2px;padding:8px 0 4px;margin-left:0;border-top:1px solid var(--line);
+  }
+  nav.main-nav.open{display:flex;}
+  nav.main-nav a{padding:11px 12px;border-radius:8px;}
+  .notice-inner{padding:8px 16px;font-size:12.5px;}
+  section{padding:38px 16px;}
+  .hero{padding:30px 16px 10px;}
+  .hero-stats{max-width:100%;}
+  .stat b{font-size:20px;}
+  .video-grid,.review-grid,.topic-grid,.creator-grid{grid-template-columns:1fr;}
+  .side-video{grid-template-columns:1fr;}
+  .side-video .thumb{aspect-ratio:16/9;}
+  .wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:96px;}
+  .wall .big{grid-column:span 2;grid-row:span 2;}
+  .wall .mid{grid-column:span 1;grid-row:span 2;}
+  .wall .wide{grid-column:span 2;grid-row:span 1;}
+  .wall .sm{grid-column:span 1;grid-row:span 1;}
+  .footer-top{grid-template-columns:1fr;gap:24px;padding:34px 16px 24px;}
+  .footer-bottom{padding:16px;flex-direction:column;gap:8px;}
+  .cta-band{padding:0 16px;}
+  .cta-inner{padding:28px 20px;}
+  .share-row{grid-template-columns:repeat(2,1fr);}
+  #backTop{right:16px;bottom:16px;width:42px;height:42px;}
+  .feature-card img{min-height:250px;}
+  .hero-badge{display:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice-bar" id="noticeBar">
+    <div class="notice-inner">
+      <span class="notice-tag">官方发布</span>
+      <div class="notice-track">
+        <span>「绅士风度」第 12 期专题《分寸之间》已上线，收录 18 支原创短片 ｜ 春季礼仪创作挑战开启报名 ｜ 创作者扶持计划新增 30 个名额 ｜ 本月新增 142 位认证作者 ｜ 品牌故事纪录片《温润》完成后期制作</span>
+        <span>「绅士风度」第 12 期专题《分寸之间》已上线，收录 18 支原创短片 ｜ 春季礼仪创作挑战开启报名 ｜ 创作者扶持计划新增 30 个名额 ｜ 本月新增 142 位认证作者 ｜ 品牌故事纪录片《温润》完成后期制作</span>
+      </div>
+      <button class="notice-close" id="noticeClose" aria-label="关闭公告">×</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark">绅</span>
+        <span class="logo-text"><b>绅士风度</b><small>GENTLEMAN STYLE</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="展开导航">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#top">首页</a>
+        <a href="#focus">视频焦点</a>
+        <a href="#topics">专题企划</a>
+        <a href="#creators">创作者</a>
+        <a href="#stories">品格随笔</a>
+        <a href="#news">企业动态</a>
+        <a href="#faq">帮助中心</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="搜索礼仪、穿搭、谈吐…" aria-label="站内搜索">
+          <button id="searchBtn">搜索</button>
+        </div>
+        <button class="btn btn-primary" id="uploadBtn">投稿</button>
+      </div>
+    </div>
+    <div class="search-feedback"><div class="inner" id="searchFeedback"></div></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" style="padding-top:40px;">
+    <div class="hero-copy">
+      <span class="eyebrow">官方网站 · 品牌视频门户</span>
+      <h1>绅士风度<em>·</em>让分寸感成为可被看见的<em>力量</em></h1>
+      <p class="hero-sub">礼仪与品格生活方式的原创视频品牌，专注真实而温暖的表达。</p>
+      <p class="hero-desc">
+        绅士风度是一个深耕礼仪、穿搭、谈吐与品格成长的原创视频品牌。作为行业领先的生活方式内容平台，我们以「温润有度」为核心理念，为企业与创作者搭建高品质的内容生态。自 2017 年持续运营至今，平台已汇聚礼仪顾问、形象设计师、职场导师与文化学者，用专业而克制的镜头语言，记录那些被忽略的细节：一次得体的握手、一句恰当的回应、一件熨得平整的衬衫。我们相信，真正的绅士风度不在表演，而在长期的自我要求与对他人的体谅。这里是绅士风度官方网站，也是每一位愿意成长的人都可以停留的社区。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#focus">进入视频焦点</a>
+        <a class="btn btn-ghost" href="#creators">认识创作者</a>
+        <button class="btn btn-gold" id="heroShare">分享本页</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b data-count="1860">0</b><span>原创短片</span></div>
+        <div class="stat"><b data-count="142">0</b><span>认证创作者</span></div>
+        <div class="stat"><b data-count="96">0</b><span>专题企划</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="frame">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23132a47'/%3E%3Cstop offset='1' stop-color='%232f6f8f'/%3E%3C/linearGradient%3E%3ClinearGradient id='suit' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23223c5c'/%3E%3Cstop offset='1' stop-color='%230e1c2e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23bg)'/%3E%3Ccircle cx='620' cy='140' r='150' fill='%23e8c97a' opacity='0.14'/%3E%3Ccircle cx='150' cy='500' r='180' fill='%23ffffff' opacity='0.05'/%3E%3Crect x='300' y='170' width='200' height='280' rx='90' fill='url(%23suit)'/%3E%3Cpath d='M400 200 L340 250 L400 340 L460 250 Z' fill='%23f4f7fb'/%3E%3Cpath d='M400 205 L372 245 L400 300 L428 245 Z' fill='%23b8860b'/%3E%3Ccircle cx='400' cy='128' r='52' fill='%23e3c9a8'/%3E%3Cpath d='M348 122 Q400 62 452 122 L452 108 Q400 48 348 108 Z' fill='%23223c5c'/%3E%3Crect x='250' y='380' width='300' height='70' rx='12' fill='%23ffffff' opacity='0.08'/%3E%3Cpath d='M120 470 H680' stroke='%23e8c97a' stroke-width='2' opacity='0.4'/%3E%3Crect x='88' y='90' width='150' height='34' rx='17' fill='%23e8c97a' opacity='0.9'/%3E%3Ctext x='163' y='113' font-size='16' fill='%233a2a06' text-anchor='middle' font-family='sans-serif'%3E分寸之间%3C/text%3E%3Ctext x='400' y='530' font-size='26' fill='%23ffffff' text-anchor='middle' font-family='sans-serif' opacity='0.92' letter-spacing='6'%3E温 润 有 度%3C/text%3E%3C/svg%3E"
+             alt="绅士风度品牌主视觉：深蓝背景中身着西装的绅士剪影与分寸之间字样">
+      </div>
+      <div class="hero-badge">
+        <span class="dot">绅</span>
+        <div><b>第 12 期专题《分寸之间》</b><span>18 支原创短片 · 持续更新</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频焦点 -->
+  <section id="focus">
+    <div class="section-head">
+      <h2>视频焦点 · 本周精选原创</h2>
+      <p>由编辑部与礼仪顾问团联合推荐，聚焦细节中的品格与分寸。</p>
+    </div>
+    <div class="focus-grid">
+      <article class="feature-card">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231a2c44'/%3E%3Cstop offset='1' stop-color='%234a6d8c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23a)'/%3E%3Crect x='90' y='120' width='280' height='260' rx='10' fill='%23ffffff' opacity='0.1'/%3E%3Cpath d='M120 360 L340 360 L300 200 L240 280 L200 230 Z' fill='%23e8c97a' opacity='0.6'/%3E%3Ccircle cx='560' cy='200' r='90' fill='%23ffffff' opacity='0.08'/%3E%3Cpath d='M470 400 Q560 300 650 400' stroke='%23e8c97a' stroke-width='6' fill='none' opacity='0.8'/%3E%3Ccircle cx='560' cy='250' r='42' fill='%23e3c9a8'/%3E%3Cpath d='M518 244 Q560 200 602 244 L602 228 Q560 184 518 228 Z' fill='%231a2c44'/%3E%3Ctext x='400' y='470' font-size='20' fill='%23ffffff' text-anchor='middle' font-family='sans-serif' opacity='0.8'%3E握手的分寸 · 完整版 12:40%3C/text%3E%3C/svg%3E"
+             alt="视频焦点封面：男士握手的分寸与姿态教学画面">
+        <div class="cap">
+          <span class="tag">本期主推</span>
+          <h3>握手的分寸：一次得体的问候，从手腕的力度开始</h3>
+          <p>与礼仪顾问林知远一起，拆解商务场合中七种常见的问候场景，从握手的角度、停留时长，到眼神的落点，用 12 分钟讲清楚“热情”与“冒犯”之间的那条界线。</p>
+          <div class="meta"><span>礼仪顾问 · 林知远</span><span>12:40</span><span>28.6 万次播放</span></div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="4280"><i>♡</i><span>4280</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-comment">评论</button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+      <div class="focus-side">
+        <article class="side-video">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233d5a3a'/%3E%3Cstop offset='1' stop-color='%237a9c6a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23b)'/%3E%3Crect x='60' y='60' width='120' height='180' rx='8' fill='%23f4f1e6' opacity='0.85'/%3E%3Crect x='80' y='85' width='80' height='8' rx='4' fill='%233d5a3a' opacity='0.5'/%3E%3Crect x='80' y='105' width='56' height='8' rx='4' fill='%233d5a3a' opacity='0.35'/%3E%3Ccircle cx='320' cy='150' r='64' fill='%23e8c97a' opacity='0.45'/%3E%3Cpath d='M280 200 L360 200 L340 120 Z' fill='%23ffffff' opacity='0.5'/%3E%3Ctext x='240' y='275' font-size='15' fill='%23ffffff' text-anchor='middle' font-family='sans-serif' opacity='0.85'%3E衣橱的秩序%3C/text%3E%3C/svg%3E"
+                 alt="视频封面：打开整洁衣橱的衣架与衬衫排列">
+            <span class="play-mini">▶</span>
+          </div>
+          <div class="body">
+            <h3>衣橱的秩序：三件衬衫如何覆盖一整周</h3>
+            <p>形象设计师周砚用极简衣橱逻辑，讲清楚版型、颜色与场合的搭配关系。</p>
+            <span class="who">形象设计 · 周砚</span>
+          </div>
+        </article>
+        <article class="side-video">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236b4a1f'/%3E%3Cstop offset='1' stop-color='%23c9971f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23c)'/%3E%3Crect x='110' y='170' width='260' height='14' rx='7' fill='%23f4e6c8' opacity='0.85'/%3E%3Crect x='140' y='130' width='200' height='40' rx='8' fill='%23ffffff' opacity='0.7'/%3E%3Ccircle cx='240' cy='90' r='34' fill='%23f4e6c8' opacity='0.9'/%3E%3Cpath d='M212 84 Q240 52 268 84 L268 72 Q240 40 212 72 Z' fill='%236b4a1f'/%3E%3Ctext x='240' y='250' font-size='15' fill='%23ffffff' text-anchor='middle' font-family='sans-serif' opacity='0.9'%3E餐桌上的谈话%3C/text%3E%3C/svg%3E"
+                 alt="视频封面：餐桌上交谈的人物剪影与餐具">
+            <span class="play-mini">▶</span>
+          </div>
+          <div class="body">
+            <h3>餐桌上的谈话：不冷场，也不越界的六种接话方式</h3>
+            <p>文化学者许清和从座次、话题与节奏三个层面，谈一顿饭里的分寸感。</p>
+            <span class="who">文化访谈 · 许清和</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section id="videos">
+    <div class="section-head">
+      <h2>热门视频流 · 持续更新的精品内容</h2>
+      <p>覆盖日常记录、实用技巧、深度测评与人物访谈，真实、克制、有细节。</p>
+      <a class="more" href="#topics">查看全部专题 →</a>
+    </div>
+    <div class="video-grid">
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231f3a5f'/%3E%3Cstop offset='1' stop-color='%235b7fa8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v1)'/%3E%3Crect x='70' y='80' width='150' height='110' rx='8' fill='%23ffffff' opacity='0.12'/%3E%3Cpath d='M110 190 L150 100 L190 190 Z' fill='%23e8c97a' opacity='0.7'/%3E%3Ccircle cx='350' cy='120' r='52' fill='%23e3c9a8' opacity='0.85'/%3E%3Cpath d='M298 114 Q350 66 402 114 L402 98 Q350 50 298 98 Z' fill='%231f3a5f'/%3E%3Crect x='320' y='190' width='120' height='12' rx='6' fill='%23ffffff' opacity='0.35'/%3E%3C/svg%3E"
+               alt="视频封面：整理领带的男士与简洁构图">
+          <span class="cat">实用技巧</span><span class="dur">08:12</span>
+        </div>
+        <div class="content">
+          <h3>领带的十种打法，以及只需要记住的三种</h3>
+          <p>从温莎结到半温莎结，讲清楚领口宽度、衬衫领型与场合之间的对应关系，让早晨穿衣不再纠结。</p>
+          <div class="tags"><span>穿搭</span><span>职场</span><span>入门</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#2f6f8f">周</span>周砚</span>
+            <span>12.4 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="1860"><i>♡</i><span>1860</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234a3f2f'/%3E%3Cstop offset='1' stop-color='%23a08a63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v2)'/%3E%3Crect x='60' y='170' width='360' height='16' rx='8' fill='%23f4ead6' opacity='0.8'/%3E%3Crect x='120' y='110' width='56' height='60' rx='6' fill='%23f4ead6' opacity='0.9'/%3E%3Crect x='200' y='130' width='90' height='40' rx='6' fill='%23e8c97a' opacity='0.75'/%3E%3Ccircle cx='360' cy='120' r='36' fill='%23f4ead6' opacity='0.85'/%3E%3Cpath d='M330 116 Q360 84 390 116 L390 104 Q360 72 330 104 Z' fill='%234a3f2f'/%3E%3C/svg%3E"
+               alt="视频封面：咖啡馆桌面上的手冲器具与笔记本">
+          <span class="cat">日常记录</span><span class="dur">06:48</span>
+        </div>
+        <div class="content">
+          <h3>一个人的下午茶：把独处过成一种修养</h3>
+          <p>记录一个普通的周三下午，从煮水、温杯到读完一章书的完整过程，谈谈如何在安静中恢复秩序。</p>
+          <div class="tags"><span>日常</span><span>治愈</span><span>记录</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#a08a63">沈</span>沈砚秋</span>
+            <span>9.7 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="1420"><i>♡</i><span>1420</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2324464a'/%3E%3Cstop offset='1' stop-color='%235d8f86'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v3)'/%3E%3Crect x='100' y='70' width='280' height='150' rx='10' fill='%23ffffff' opacity='0.1'/%3E%3Ccircle cx='180' cy='140' r='30' fill='%23e8c97a' opacity='0.85'/%3E%3Ccircle cx='240' cy='140' r='30' fill='%23ffffff' opacity='0.55'/%3E%3Ccircle cx='300' cy='140' r='30' fill='%23e3c9a8' opacity='0.8'/%3E%3Crect x='150' y='195' width='180' height='10' rx='5' fill='%23ffffff' opacity='0.4'/%3E%3C/svg%3E"
+               alt="视频封面：三位男性围坐进行圆桌讨论">
+          <span class="cat">人物访谈</span><span class="dur">21:06</span>
+        </div>
+        <div class="content">
+          <h3>三位中年人的坦白局：什么叫“有担当”</h3>
+          <p>一位建筑师、一位教师、一位主厨，聊各自的失败、家庭与妥协，以及他们理解中的责任与体面。</p>
+          <div class="tags"><span>访谈</span><span>成长</span><span>深度</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#245a52">许</span>许清和</span>
+            <span>18.3 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="3120"><i>♡</i><span>3120</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23343434'/%3E%3Cstop offset='1' stop-color='%23808080'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v4)'/%3E%3Crect x='80' y='60' width='150' height='150' rx='8' fill='%23f0f0f0' opacity='0.15'/%3E%3Crect x='250' y='90' width='150' height='100' rx='8' fill='%23e8c97a' opacity='0.35'/%3E%3Cpath d='M100 200 L180 90 L230 200 Z' fill='%23ffffff' opacity='0.4'/%3E%3Ccircle cx='320' cy='140' r='40' fill='%23ffffff' opacity='0.25'/%3E%3C/svg%3E"
+               alt="视频封面：皮鞋保养工具摆放在垫布上">
+          <span class="cat">深度测评</span><span class="dur">10:24</span>
+        </div>
+        <div class="content">
+          <h3>皮鞋的三次上油：一双鞋能陪你多久</h3>
+          <p>用三个月、六个月、一年的对比跟拍，实测不同保养频率对鞋面与鞋型的影响，附完整保养流程。</p>
+          <div class="tags"><span>测评</span><span>手作</span><span>保养</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#4a4a4a">程</span>程叙</span>
+            <span>7.2 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="980"><i>♡</i><span>980</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231f3a5f'/%3E%3Cstop offset='1' stop-color='%23c9971f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v5)'/%3E%3Crect x='90' y='140' width='300' height='12' rx='6' fill='%23ffffff' opacity='0.45'/%3E%3Ccircle cx='160' cy='100' r='42' fill='%23f4ead6' opacity='0.9'/%3E%3Cpath d='M124 94 Q160 56 196 94 L196 80 Q160 42 124 80 Z' fill='%231f3a5f'/%3E%3Crect x='230' y='70' width='140' height='60' rx='8' fill='%23ffffff' opacity='0.25'/%3E%3C/svg%3E"
+               alt="视频封面：演讲者站在讲台前的手势姿态">
+          <span class="cat">知识科普</span><span class="dur">14:37</span>
+        </div>
+        <div class="content">
+          <h3>站在台上：公众表达的六个身体细节</h3>
+          <p>站姿、手势、语速、停顿、视线与收尾，逐项拆解让表达更稳的具体方法，新手也能立刻练习。</p>
+          <div class="tags"><span>表达</span><span>职场</span><span>干货</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#1f3a5f">林</span>林知远</span>
+            <span>15.8 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="2450"><i>♡</i><span>2450</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b4a6b'/%3E%3Cstop offset='1' stop-color='%23b8a5c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v6)'/%3E%3Crect x='80' y='80' width='130' height='140' rx='8' fill='%23ffffff' opacity='0.14'/%3E%3Crect x='230' y='110' width='170' height='80' rx='8' fill='%23e8c97a' opacity='0.4'/%3E%3Cpath d='M120 200 L170 110 L200 200 Z' fill='%23ffffff' opacity='0.5'/%3E%3Ccircle cx='320' cy='150' r='30' fill='%23ffffff' opacity='0.6'/%3E%3C/svg%3E"
+               alt="视频封面：书架前的阅读空间与台灯">
+          <span class="cat">生活方式</span><span class="dur">05:52</span>
+        </div>
+        <div class="content">
+          <h3>书房的一平米：给注意力留一块安静的地方</h3>
+          <p>不追求大改造，只调整桌面、灯光与座椅，讲清楚一个小角落如何影响每天的专注时长。</p>
+          <div class="tags"><span>家居</span><span>收纳</span><span>习惯</span></div>
+          <div class="foot">
+            <span class="author-mini"><span class="avatar" style="background:#5b4a6b">顾</span>顾言</span>
+            <span>6.5 万播放</span>
+          </div>
+          <div class="card-actions">
+            <button class="act js-like" data-base="1120"><i>♡</i><span>1120</span></button>
+            <button class="act js-save"><i>☆</i><span>收藏</span></button>
+            <button class="act js-copy">复制链接</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section id="topics">
+    <div class="section-head">
+      <h2>专题企划 · 一个主题，多种看法</h2>
+      <p>每期邀请不同领域的创作者共同完成，从策划到成片完整呈现创作幕后。</p>
+    </div>
+    <div class="topic-grid">
+      <article class="topic-card">
+        <div>
+          <span class="status">更新至第 6 集 · 持续更新</span>
+          <h3>分寸之间</h3>
+          <p>从一次握手到一场告别，记录那些决定关系走向的细微时刻。18 位创作者交出各自的答案。</p>
+        </div>
+        <div class="sub"><span>18 支短片</span><span>12 位作者</span><span>口碑 9.2</span></div>
+      </article>
+      <article class="topic-card">
+        <div>
+          <span class="status">已完结 · 可完整回顾</span>
+          <h3>一件衬衫的十年</h3>
+          <p>跟随匠人从选布、量体到成衣，完整记录一件衬衫的制作流程，以及坚持手工制作的理由。</p>
+        </div>
+        <div class="sub"><span>9 支短片</span><span>6 位作者</span><span>口碑 8.9</span></div>
+      </article>
+      <article class="topic-card">
+        <div>
+          <span class="status">征集中 · 可报名参与</span>
+          <h3>我的父亲</h3>
+          <p>面向所有创作者开放征集，记录父亲身上那些不擅表达却始终存在的担当，优秀作品将获官方推荐。</p>
+        </div>
+        <div class="sub"><span>已收 64 份投稿</span><span>评选进行中</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section id="creators">
+    <div class="section-head">
+      <h2>创作者矩阵 · 值得信赖的专业作者</h2>
+      <p>礼仪顾问、形象设计师、文化学者与生活方式记录者，构成平台的多元内容生态。</p>
+    </div>
+    <div class="creator-grid">
+
+      <article class="creator-card">
+        <div class="creator-avatar" style="background:linear-gradient(135deg,#1f3a5f,#2f6f8f)">林</div>
+        <h3>林知远</h3>
+        <div class="field">礼仪顾问 · 商务场景</div>
+        <p>从事商务礼仪培训十四年，服务过数十家企业，擅长把抽象的“得体”拆解成可练习的动作。</p>
+        <div class="nums"><div><b>126</b><span>作品</span></div><div><b>38.6 万</b><span>关注</span></div></div>
+        <button class="link-btn js-author" data-author="林知远" data-desc="商务礼仪顾问，十四年培训经验，主讲握手、介绍、座次与宴请等场景系列内容。">查看作者</button>
+      </article>
+
+      <article class="creator-card">
+        <div class="creator-avatar" style="background:linear-gradient(135deg,#7a5a12,#c9971f)">周</div>
+        <h3>周砚</h3>
+        <div class="field">形象设计 · 极简衣橱</div>
+        <p>男装定制从业者，主张用少量单品建立稳定风格，长期记录普通人的衣橱改造过程。</p>
+        <div class="nums"><div><b>98</b><span>作品</span></div><div><b>27.2 万</b><span>关注</span></div></div>
+        <button class="link-btn js-author" data-author="周砚" data-desc="男装定制设计师，专注极简衣橱与版型研究，擅长把搭配逻辑讲成可复用的方法。">查看作者</button>
+      </article>
+
+      <article class="creator-card">
+        <div class="creator-avatar" style="background:linear-gradient(135deg,#244b47,#5d8f86)">许</div>
+        <h3>许清和</h3>
+        <div class="field">文化访谈 · 谈话现场</div>
+        <p>文化栏目主理人，做过七年深度访谈，喜欢用长时间的对话呈现一个人的真实状态。</p>
+        <div class="nums"><div><b>74</b><span>作品</span></div><div><b>21.5 万</b><span>关注</span></div></div>
+        <button class="link-btn js-author" data-author="许清和" data-desc="文化访谈主理人，擅长长对话与现场记录，关注普通人身上的责任与选择。">查看作者</button>
+      </article>
+
+      <article class="creator-card">
+        <div class="creator-avatar" style="background:linear-gradient(135deg,#4a3f2f,#a08a63)">沈</div>
+        <h3>沈砚秋</h3>
+        <div class="field">日常记录 · 治愈影像</div>
+        <p>自由影像作者，拍独处、拍清晨、拍厨房里的水汽，用慢节奏记录生活本来的质地。</p>
+        <div class="nums"><div><b>152</b><span>作品</span></div><div><b>33.9 万</b><span>关注</span></div></div>
+        <button class="link-btn js-author" data-author="沈砚秋" data-desc="自由影像作者，专注日常记录与治愈系影像，作品以安静、克制的生活质感见长。">查看作者</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 品格随笔 -->
+  <section id="stories">
+    <div class="section-head">
+      <h2>品格随笔 · 影像之外的文字记录</h2>
+      <p>由创作者撰写的生活观察，与视频内容互相呼应，呈现更完整的表达。</p>
+    </div>
+    <div class="story-wrap">
+      <article class="story">
+        <div class="quotemark">“</div>
+        <h3>把“谢谢”说完整</h3>
+        <p>有一次在电梯里，一位年长的同事为所有人按住门，等到最后一个人出来才松手。我们没有一个人说完整的谢谢，只有几声含混的点头。后来我把这件事记在手机里，提醒自己：礼貌不是完成了动作，而是让对方感受到被看见。现在我会看着对方的眼睛，说清楚谢的是什么。</p>
+        <div class="sign"><span class="avatar" style="background:#1f3a5f">林</span>林知远 · 礼仪随笔</div>
+      </article>
+      <article class="story">
+        <div class="quotemark">“</div>
+        <h3>一件旧外套的体面</h3>
+        <p>父亲那件外套穿了十一年，袖口磨得发亮，却总是干干净净、扣子齐全。他从不觉得旧衣服丢人，反而说，衣服是穿给自己看的，整洁是给自己留的底气。这句话影响了我后来做衣橱内容的方式——不劝人买更多，只劝人把已有的照顾好。</p>
+        <div class="sign"><span class="avatar" style="background:#7a5a12">周</span>周砚 · 衣橱笔记</div>
+      </article>
+      <article class="story">
+        <div class="quotemark">“</div>
+        <h3>沉默也是一种回答</h3>
+        <p>采访过一位退休教师，问他一辈子最骄傲的事。他沉默了将近一分钟，然后说，没有让任何一个学生因为家境被区别对待。那一分钟里，我几乎听见他在回忆每一个名字。后来我剪片时保留了这段沉默，因为它比任何金句都更有分量。</p>
+        <div class="sign"><span class="avatar" style="background:#244b47">许</span>许清和 · 访谈手记</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section id="wall">
+    <div class="section-head">
+      <h2>影像墙 · 社区作品精选</h2>
+      <p>来自平台创作者的静态影像与短片截图，记录真实生活中的细节与温度。</p>
+    </div>
+    <div class="wall">
+      <figure class="big">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23132a47'/%3E%3Cstop offset='1' stop-color='%232f6f8f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='180' cy='160' r='70' fill='%23e8c97a' opacity='0.35'/%3E%3Crect x='330' y='110' width='180' height='210' rx='10' fill='%23ffffff' opacity='0.1'/%3E%3Cpath d='M360 300 L420 170 L480 300 Z' fill='%23ffffff' opacity='0.4'/%3E%3Ctext x='300' y='375' font-size='17' fill='%23ffffff' text-anchor='middle' font-family='sans-serif' opacity='0.8'%3E清晨六点的城市%3C/text%3E%3C/svg%3E"
+             alt="影像墙大图：清晨六点城市街景与晨光">
+        <figcaption>清晨六点的城市 · 沈砚秋</figcaption>
+      </figure>
+      <figure class="mid">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234a3f2f'/%3E%3Cstop offset='1' stop-color='%23c9b08a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w2)'/%3E%3Crect x='80' y='220' width='240' height='14' rx='7' fill='%23f4ead6' opacity='0.85'/%3E%3Crect x='120' y='150' width='80' height='70' rx='8' fill='%23ffffff' opacity='0.25'/%3E%3Ccircle cx='290' cy='150' r='40' fill='%23e8c97a' opacity='0.5'/%3E%3C/svg%3E"
+             alt="影像墙中图：桌面上的手冲咖啡与书">
+        <figcaption>一杯手冲的时间 · 顾言</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2324464a'/%3E%3Cstop offset='1' stop-color='%236d9c90'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23w3)'/%3E%3Crect x='70' y='80' width='110' height='140' rx='8' fill='%23ffffff' opacity='0.13'/%3E%3Ccircle cx='280' cy='140' r='46' fill='%23e8c97a' opacity='0.4'/%3E%3Cpath d='M220 220 L280 110 L340 220 Z' fill='%23ffffff' opacity='0.3'/%3E%3C/svg%3E"
+             alt="影像墙宽图：书房窗边的阅读角与绿植">
+        <figcaption>窗边的阅读角 · 程叙</figcaption>
+      </figure>
+      <figure class="sm">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b4a6b'/%3E%3Cstop offset='1' stop-color='%23a08ab0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='200' fill='url(%23w4)'/%3E%3Ccircle cx='90' cy='90' r='30' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='150' y='70' width='100' height='60' rx='6' fill='%23e8c97a' opacity='0.4'/%3E%3C/svg%3E"
+             alt="影像墙小图：领带与衬衫的平铺搭配">
+        <figcaption>今日搭配 · 周砚</figcaption>
+      </figure>
+      <figure class="sm">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23343434'/%3E%3Cstop offset='1' stop-color='%23808080'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='200' fill='url(%23w5)'/%3E%3Crect x='60' y='60' width='80' height='80' rx='6' fill='%23ffffff' opacity='0.16'/%3E%3Ccircle cx='220' cy='100' r='34' fill='%23e8c97a' opacity='0.35'/%3E%3C/svg%3E"
+             alt="影像墙小图：手工皮具工作台局部">
+        <figcaption>工作台一角 · 程叙</figcaption>
+      </figure>
+      <figure class="mid">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236b4a1f'/%3E%3Cstop offset='1' stop-color='%23d9b26a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23w6)'/%3E%3Crect x='90' y='170' width='220' height='12' rx='6' fill='%23fff6e6' opacity='0.8'/%3E%3Ccircle cx='200' cy='120' r='46' fill='%23fff6e6' opacity='0.85'/%3E%3Cpath d='M160 114 Q200 70 240 114 L240 100 Q200 56 160 100 Z' fill='%236b4a1f'/%3E%3C/svg%3E"
+             alt="影像墙中图：餐桌上的一次正式宴请布置">
+        <figcaption>一次家宴 · 许清和</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section id="reviews">
+    <div class="section-head">
+      <h2>用户评价 · 来自社区的真实反馈</h2>
+      <p>我们更在意长期的口碑，而不是一时的热度。</p>
+    </div>
+    <div class="review-grid">
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>做了三年销售，一直以为热情就是礼数。看了林知远老师那期握手的分寸，才发现自己过去很多次都让对方有点为难。现在见客户前会先想清楚这次见面的目的，效果确实不一样。</p>
+        <div class="who"><span class="avatar" style="background:#2f6f8f">陈</span><div><b>陈先生</b><span>商务从业者 · 使用一年</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>我是被“衣橱的秩序”那期吸引过来的。以前总觉得穿得贵才体面，现在更在意合不合场合。周砚老师讲得实在，不劝人买，反而帮我省了不少钱。</p>
+        <div class="who"><span class="avatar" style="background:#a08a63">吴</span><div><b>吴女士</b><span>职场新人 · 使用八个月</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★☆</div>
+        <p>访谈内容质量很高，尤其喜欢许清和那种不急着下结论的方式。唯一的小建议是希望部分长视频能出更细的分段，通勤路上看会方便些。</p>
+        <div class="who"><span class="avatar" style="background:#245a52">刘</span><div><b>刘先生</b><span>教师 · 使用两年</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>我在平台投稿过两次，编辑给了很具体的修改意见，不是那种敷衍的模板。第二次的作品被推荐到专题里，那种被认真对待的感觉比流量更让我开心。</p>
+        <div class="who"><span class="avatar" style="background:#5b4a6b">赵</span><div><b>赵女士</b><span>独立创作者 · 认证作者</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>家里孩子正值青春期，不爱听道理。我把“把谢谢说完整”那篇读给他听，他居然没打断。后来出门他主动给老人让座，还回头看了我一眼。</p>
+        <div class="who"><span class="avatar" style="background:#1f3a5f">孙</span><div><b>孙先生</b><span>家长 · 使用半年</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★☆</div>
+        <p>内容整体偏克制，节奏偏慢，对追求强刺激的人来说可能不够“爽”。但我想这大概也正是它想表达的东西——不是所有事都需要快。</p>
+        <div class="who"><span class="avatar" style="background:#4a4a4a">郑</span><div><b>郑先生</b><span>设计师 · 使用一年半</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 动态与榜单 -->
+  <section id="news">
+    <div class="section-head">
+      <h2>企业动态与内容榜单</h2>
+      <p>官方发布的品牌资讯，以及本周社区热度排行，见证持续运营的每一步。</p>
+    </div>
+    <div class="two-col">
+      <div>
+        <ul class="timeline">
+          <li>
+            <time>2025 · 03 · 18</time>
+            <h3>第 12 期专题《分寸之间》正式上线</h3>
+            <p>本期专题共收录 18 支原创短片，覆盖握手、介绍、座次、宴请、告别五个场景，全部内容由平台礼仪顾问团审校，并在片尾附有可下载的行为清单。</p>
+          </li>
+          <li>
+            <time>2025 · 03 · 09</time>
+            <h3>春季创作挑战开启报名</h3>
+            <p>以“我身边最有教养的一个人”为题，面向所有创作者征集短片，报名截止 4 月 20 日，入选作品将获得官方推荐位与创作扶持金。</p>
+          </li>
+          <li>
+            <time>2025 · 02 · 27</time>
+            <h3>创作者扶持计划新增 30 个名额</h3>
+            <p>本轮扶持重点面向礼仪、形象、表达与生活方式方向，提供拍摄指导、剪辑协作与内容分发支持，帮助新作者稳定输出。</p>
+          </li>
+          <li>
+            <time>2025 · 02 · 11</time>
+            <h3>品牌故事纪录片《温润》完成后期制作</h3>
+            <p>历时十个月跟拍四位普通人，记录他们在日常生活中对“体面”的理解，成片将于近期在官方渠道发布。</p>
+          </li>
+        </ul>
+      </div>
+      <div class="rank-panel">
+        <div class="rank-tabs">
+          <button class="on" data-rank="hot">热度榜</button>
+          <button data-rank="new">新人榜</button>
+          <button data-rank="word">口碑榜</button>
+        </div>
+        <ul class="rank-list" id="rankList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 -->
+  <section id="partners">
+    <div class="section-head">
+      <h2>合作品牌 · 共同倡导有品格的表达</h2>
+      <p>我们与注重品质与责任的品牌长期合作，坚持原创与正版，拒绝浮夸表达。</p>
+    </div>
+    <div class="partner-row">
+      <span>衡定制西装</span>
+      <span>知白书店</span>
+      <span>山野茶室</span>
+      <span>拾光文具</span>
+      <span>静川皮具</span>
+      <span>慢行旅行</span>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-head">
+      <h2>帮助中心 · 常见问题</h2>
+      <p>关于内容、投稿与版权，这里有你需要知道的全部说明。</p>
+    </div>
+    <div class="faq-wrap">
+      <details open>
+        <summary>平台的内容方向是什么，和一般的短视频账号有什么区别？</summary>
+        <div class="ans">绅士风度是一个以礼仪、形象、表达与品格成长为核心的原创视频品牌。我们不以追逐热点为目标，而是围绕具体场景做系统性的内容：一次问候、一件衬衫、一场谈话。所有短片由编辑团队与顾问团共同策划，力求可复用、可练习。</div>
+      </details>
+      <details>
+        <summary>创作者如何向平台投稿？需要满足哪些条件？</summary>
+        <div class="ans">点击页面右上角的“投稿”按钮即可提交作品信息。我们欢迎原创短片、影像随笔与图文记录，题材需与礼仪、生活方式、表达能力或人物故事相关。作品须为作者原创，画质建议 1080p 及以上，时长不限。编辑会在 5 个工作日内给出反馈。</div>
+      </details>
+      <details>
+        <summary>平台对原创与正版有哪些具体要求？</summary>
+        <div class="ans">所有上线内容需保证画面、音乐、字体的合法授权，禁止搬运与二次剪辑他人作品。引用他人素材需注明来源并取得许可。平台设有专人审核，一经发现侵权将立即下架并取消作者认证资格。</div>
+      </details>
+      <details>
+        <summary>如何成为认证创作者，认证后有什么不同？</summary>
+        <div class="ans">连续发布 5 支以上原创作品、内容方向稳定且无违规记录的作者，可申请认证。认证作者将获得专属标识、优先推荐位、创作扶持金申请资格，以及参与专题企划的机会。</div>
+      </details>
+      <details>
+        <summary>视频的画质与观看体验如何保障？</summary>
+        <div class="ans">平台内容以高清规格制作与分发，适配不同网络环境自动选择清晰度。若出现播放不流畅的情况，可尝试切换网络或降低清晰度，也可以在帮助中心提交反馈，技术团队会跟进处理。</div>
+      </details>
+      <details>
+        <summary>我可以把平台内容用于线下活动或教学吗？</summary>
+        <div class="ans">用于非商业的教学与分享，请注明来源并保留完整画面；用于商业用途或公开放映，需提前联系商务合作邮箱获取书面授权。我们鼓励合理的分享，也重视每一位创作者的权利。</div>
+      </details>
+      <details>
+        <summary>平台会举办线下活动吗？如何报名？</summary>
+        <div class="ans">平台每年会举办若干场创作者沙龙与礼仪工作坊，通常在官方动态中提前公布时间与报名方式。认证作者可优先获得名额，普通用户也可通过填写报名表格参与抽选。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band" id="contact">
+    <div class="cta-inner">
+      <div>
+        <h2>把你的故事，交给一个认真对待内容的平台</h2>
+        <p>无论你擅长拍摄、写作还是讲述，绅士风度都愿意为你留一个位置。我们持续运营、坚持原创，用专业与耐心陪伴每一位创作者成长。商务合作、内容投稿与媒体联络，欢迎随时与我们联系。</p>
+      </div>
+      <div class="cta-actions">
+        <button class="btn btn-gold" id="ctaUpload">我要投稿</button>
+        <button class="btn btn-ghost" id="ctaContact" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.45);">联系合作</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="#top">
+        <span class="logo-mark">绅</span>
+        <span class="logo-text"><b>绅士风度</b><small>GENTLEMAN STYLE</small></span>
+      </a>
+      <p>绅士风度官方网站，礼仪与品格生活方式视频品牌。自 2017 年持续运营，坚持原创与正版，以专业内容生态陪伴每一位愿意成长的人。</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#focus">视频焦点</a></li>
+        <li><a href="#videos">热门视频流</a></li>
+        <li><a href="#topics">专题企划</a></li>
+        <li><a href="#stories">品格随笔</a></li>
+        <li><a href="#wall">影像墙</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于平台</h4>
+      <ul>
+        <li><a href="#creators">创作者矩阵</a></li>
+        <li><a href="#news">企业动态</a></li>
+        <li><a href="#reviews">用户评价</a></li>
+        <li><a href="#faq">帮助中心</a></li>
+        <li><a href="#partners">合作品牌</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>联系我们</h4>
+      <div class="contact-line"><b>合作邮箱</b><span>hello@gentlemanstyle.cn</span></div>
+      <div class="contact-line"><b>投稿咨询</b><span>create@gentlemanstyle.cn</span></div>
+      <div class="contact-line"><b>工作时间</b><span>周一至周五 10:00–19:00</span></div>
+      <div class="contact-line"><b>办公地址</b><span>上海市静安区创意园区 A 座 7 层</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2017–2025 绅士风度 版权所有 · 持续运营中 · 沪ICP备00000000号（占位）</span>
+    <div class="links">
+      <a href="#faq">版权声明</a>
+      <a href="#faq">用户协议</a>
+      <a href="#faq">隐私政策</a>
+      <a href="#contact">商务合作</a>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<button id="backTop" aria-label="回到顶部">↑</button>
+
+<!-- 通用弹窗 -->
+<div class="modal-mask" id="modalMask">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <h3 id="modalTitle">提示</h3>
+      <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* ---------- 公告条关闭 ---------- */
+  var noticeClose = document.getElementById('noticeClose');
+  noticeClose.addEventListener('click', function(){
+    document.getElementById('noticeBar').style.display = 'none';
+    toast('公告已收起');
+  });
+
+  /* ---------- 移动端导航 ---------- */
+  var menuToggle = document.getElementById('menuToggle');
+  var mainNav = document.getElementById('mainNav');
+  menuToggle.addEventListener('click', function(){
+    mainNav.classList.toggle('open');
+    menuToggle.textContent = mainNav.classList.contains('open') ? '×' : '☰';
+  });
+  mainNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      mainNav.classList.remove('open');
+      menuToggle.textContent = '☰';
+    }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('searchInput');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchFeedback = document.getElementById('searchFeedback');
+  var searchIndex = [
+    {t:'握手的分寸', k:'握手 问候 礼仪 商务 林知远'},
+    {t:'衣橱的秩序', k:'衣橱 衬衫 穿搭 周砚 形象'},
+    {t:'餐桌上的谈话', k:'餐桌 宴请 谈话 许清和'},
+    {t:'领带的十种打法', k:'领带 打法 衬衫 职场 穿搭'},
+    {t:'一个人的下午茶', k:'独处 日常 治愈 记录 沈砚秋'},
+    {t:'三位中年人的坦白局', k:'访谈 中年 责任 成长'},
+    {t:'皮鞋的三次上油', k:'皮鞋 保养 测评 手作'},
+    {t:'站在台上', k:'表达 演讲 职场 干货'},
+    {t:'书房的一平米', k:'书房 家居 收纳 专注'},
+    {t:'分寸之间', k:'专题 分寸 企划'},
+    {t:'一件衬衫的十年', k:'专题 衬衫 匠人'},
+    {t:'我的父亲', k:'征集 父亲 故事 报名'}
+  ];
+  function doSearch(){
+    var key = (searchInput.value || '').trim();
+    if(!key){
+      showFeedback('请输入想了解的内容关键词，例如“握手”“衣橱”“访谈”。');
+      searchInput.focus();
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.t.indexOf(key) > -1 || item.k.indexOf(key) > -1;
+    });
+    if(hits.length){
+      var html = '与「' + escapeHtml(key) + '」相关的内容共 <b style="color:#1f3a5f">' + hits.length + '</b> 条：' +
+        hits.slice(0,4).map(function(h){ return '「' + h.t + '」'; }).join('、') +
+        (hits.length > 4 ? ' 等，' : '，') + '已为你匹配到下方内容区。';
+      showFeedback(html);
+    }else{
+      showFeedback('暂未找到与「' + escapeHtml(key) + '」直接相关的内容。可以换一个说法，或前往帮助中心查看投稿与内容说明。');
+    }
+  }
+  function showFeedback(html){
+    searchFeedback.innerHTML = html;
+    searchFeedback.classList.add('show');
+  }
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ doSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ searchFeedback.classList.remove('show'); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('.js-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var base = parseInt(btn.getAttribute('data-base') || '0', 10);
+      var liked = btn.classList.toggle('liked');
+      btn.querySelector('i').textContent = liked ? '♥' : '♡';
+      span.textContent = liked ? (base + 1) : base;
+      toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('.js-save').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('saved');
+      btn.querySelector('i').textContent = saved ? '★' : '☆';
+      btn.querySelector('span').textContent = saved ? '已收藏' : '收藏';
+      toast(saved ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  document.querySelectorAll('.js-copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      copyText('绅士风度 · 原创视频内容 · 邀你一起阅读');
+    });
+  });
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast('内容说明已复制，可分享给朋友');
+      }).catch(function(){
+        legacyCopy(text);
+      });
+    }else{
+      legacyCopy(text);
+    }
+  }
+  function legacyCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); toast('内容说明已复制，可分享给朋友'); }
+    catch(err){ toast('复制失败，请手动选择文字'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 弹窗 ---------- */
+  var mask = document.getElementById('modalMask');
+  var mTitle = document.getElementById('modalTitle');
+  var mBody = document.getElementById('modalBody');
+  function openModal(title, html){
+    mTitle.textContent = title;
+    mBody.innerHTML = html;
+    mask.classList.add('show');
+  }
+  function closeModal(){ mask.classList.remove('show'); }
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+
+  /* 评论 */
+  document.querySelectorAll('.js-comment').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('发表评论', '' +
+        '<p>你的每一条反馈，编辑团队都会阅读。评论将在审核后展示。</p>' +
+        '<label for="cmtName">昵称</label>' +
+        '<input id="cmtName" type="text" placeholder="怎么称呼你">' +
+        '<label for="cmtText">评论内容</label>' +
+        '<textarea id="cmtText" placeholder="说说你的看法或想了解的细节"></textarea>' +
+        '<div class="modal-foot" style="padding:18px 0 0;">' +
+        '<button class="btn btn-ghost" data-close>取消</button>' +
+        '<button class="btn btn-primary" id="cmtSubmit">提交评论</button></div>');
+      bindModalFoot();
+      document.getElementById('cmtSubmit').addEventListener('click', function(){
+        var v = document.getElementById('cmtText').value.trim();
+        if(!v){ toast('请先写下评论内容'); return; }
+        closeModal();
+        toast('评论已提交，审核通过后展示');
+      });
+    });
+  });
+
+  /* 作者弹窗 */
+  document.querySelectorAll('.js-author').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var desc = btn.getAttribute('data-desc');
+      openModal(name + ' · 创作者档案', '' +
+        '<p><b style="color:#1f3a5f">' + name + '</b>，绅士风度认证创作者。' + desc + '</p>' +
+        '<p style="background:#f6fafd;border-left:3px solid #b8860b;padding:12px 14px;border-radius:8px;color:#3c4a5a;font-size:13.5px;margin-bottom:0;">平台为认证作者提供拍摄指导、剪辑协作与内容分发支持，帮助创作者持续输出精品内容。</p>' +
+        '<div class="modal-foot" style="padding:18px 0 0;">' +
+        '<button class="btn btn-ghost" data-close>关闭</button>' +
+        '<button class="btn btn-primary" id="authorFollow">关注作者</button></div>');
+      bindModalFoot();
+      document.getElementById('authorFollow').addEventListener('click', function(){
+        closeModal();
+        toast('已关注 ' + name);
+      });
+    });
+  });
+
+  /* 投稿弹窗 */
+  function openUpload(){
+    openModal('创作者投稿', '' +
+      '<p>欢迎提交原创短片或影像随笔。请填写基本信息，编辑会在 5 个工作日内通过邮件反馈。</p>' +
+      '<label for="upName">作者昵称</label>' +
+      '<input id="upName" type="text" placeholder="你的昵称或团队名称">' +
+      '<label for="upMail">联系邮箱</label>' +
+      '<input id="upMail" type="email" placeholder="用于接收审核结果">' +
+      '<label for="upCat">内容方向</label>' +
+      '<select id="upCat">' +
+      '<option>礼仪与场景</option><option>形象与穿搭</option><option>表达与沟通</option>' +
+      '<option>生活方式记录</option><option>人物访谈故事</option><option>其他原创方向</option>' +
+      '</select>' +
+      '<label for="upText">作品简介</label>' +
+      '<textarea id="upText" placeholder="简要说明作品主题、时长与拍摄思路"></textarea>' +
+      '<div class="modal-foot" style="padding:18px 0 0;">' +
+      '<button class="btn btn-ghost" data-close>取消</button>' +
+      '<button class="btn btn-primary" id="upSubmit">提交投稿</button></div>');
+    bindModalFoot();
+    document.getElementById('upSubmit').addEventListener('click', function(){
+      var n = document.getElementById('upName').value.trim();
+      var m = document.getElementById('upMail').value.trim();
+      var t = document.getElementById('upText').value.trim();
+      if(!n || !m || !t){ toast('请完整填写昵称、邮箱与作品简介'); return; }
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)){ toast('邮箱格式好像不太对，请检查'); return; }
+      closeModal();
+      toast('投稿已提交，请留意邮箱通知');
+    });
+  }
+  document.getElementById('uploadBtn').addEventListener('click', openUpload);
+  document.getElementById('ctaUpload').addEventListener('click', openUpload);
+
+  /* 联系弹窗 */
+  document.getElementById('ctaContact').addEventListener('click', function(){
+    openModal('商务合作与媒体联络', '' +
+      '<p>我们与注重品质与责任的品牌长期合作，也欢迎媒体进行内容交流。</p>' +
+      '<div style="font-size:14px;line-height:2.1;color:#3c4a5a;">' +
+      '<div><b style="color:#1f3a5f">商务合作：</b>hello@gentlemanstyle.cn</div>' +
+      '<div><b style="color:#1f3a5f">投稿咨询：</b>create@gentlemanstyle.cn</div>' +
+      '<div><b style="color:#1f3a5f">工作时间：</b>周一至周五 10:00–19:00</div>' +
+      '<div><b style="color:#1f3a5f">办公地址：</b>上海市静安区创意园区 A 座 7 层</div>' +
+      '</div>' +
+      '<div class="modal-foot" style="padding:18px 0 0;">' +
+      '<button class="btn btn-ghost" data-close>关闭</button>' +
+      '<button class="btn btn-primary" id="copyMail">复制合作邮箱</button></div>');
+    bindModalFoot();
+    document.getElementById('copyMail').addEventListener('click', function(){
+      copyText('hello@gentlemanstyle.cn');
+      closeModal();
+    });
+  });
+
+  /* 分享 */
+  function openShare(){
+    openModal('分享这份内容', '' +
+      '<p>把绅士风度的原创内容分享给朋友，让更多人看到细节里的分寸。</p>' +
+      '<div class="share-row">' +
+      '<button data-share="微信"><span class="ico">💬</span>微信</button>' +
+      '<button data-share="微博"><span class="ico">📢</span>微博</button>' +
+      '<button data-share="QQ"><span class="ico">🐧</span>QQ</button>' +
+      '<button data-share="复制链接"><span class="ico">🔗</span>复制链接</button>' +
+      '</div>' +
+      '<div class="modal-foot" style="padding:6px 0 0;">' +
+      '<button class="btn btn-ghost" data-close>关闭</button></div>');
+    bindModalFoot();
+    mBody.querySelectorAll('[data-share]').forEach(function(b){
+      b.addEventListener('click', function(){
+        var name = b.getAttribute('data-share');
+        if(name === '复制链接'){
+          copyText('绅士风度 · 原创视频与品格内容社区');
+        }else{
+          toast('已唤起' + name + '分享入口（示例）');
+        }
+      });
+    });
+  }
+  document.getElementById('heroShare').addEventListener('click', openShare);
+
+  function bindModalFoot(){
+    mBody.querySelectorAll('[data-close]').forEach(function(b){
+      b.addEventListener('click', closeModal);
+    });
+  }
+
+  /* ---------- 榜单切换 ---------- */
+  var rankData = {
+    hot:[
+      {n:'握手的分寸：一次得体的问候', s:'28.6 万', a:'林知远'},
+      {n:'三位中年人的坦白局', s:'18.3 万', a:'许清和'},
+      {n:'站在台上：公众表达的六个身体细节', s:'15.8 万', a:'林知远'},
+      {n:'领带的十种打法', s:'12.4 万', a:'周砚'},
+      {n:'一个人的下午茶', s:'9.7 万', a:'沈砚秋'}
+    ],
+    new:[
+      {n:'书房的一平米', s:'6.5 万', a:'顾言'},
+      {n:'皮鞋的三次上油', s:'7.2 万', a:'程叙'},
+      {n:'第一次去做客：伴手礼的选择', s:'4.1 万', a:'沈砚秋'},
+      {n:'地铁上的让座与不让座', s:'3.6 万', a:'程叙'},
+      {n:'学一件衬衫的熨烫顺序', s:'2.9 万', a:'周砚'}
+    ],
+    word:[
+      {n:'一件衬衫的十年（专题）', s:'9.2 分', a:'官方企划'},
+      {n:'分寸之间（专题）', s:'9.2 分', a:'官方企划'},
+      {n:'餐桌上的谈话', s:'9.0 分', a:'许清和'},
+      {n:'把“谢谢”说完整', s:'8.9 分', a:'林知远'},
+      {n:'我的父亲（征集活动）', s:'8.8 分', a:'社区共创'}
+    ]
+  };
+  var rankList = document.getElementById('rankList');
+  function renderRank(key){
+    rankList.innerHTML = rankData[key].map(function(item, i){
+      return '<li><span class="no">' + (i+1) + '</span>' +
+        '<div class="info"><b>' + item.n + '</b><span>' + item.a + '</span></div>' +
+        '<span class="score">' + item.s + '</span></li>';
+    }).join('');
+  }
+  renderRank('hot');
+  document.querySelectorAll('.rank-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.rank-tabs button').forEach(function(b){ b.classList.remove('on'); });
+      btn.classList.add('on');
+      renderRank(btn.getAttribute('data-rank'));
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var cur = 0;
+      var step = Math.max(1, Math.floor(target / 42));
+      var timer = setInterval(function(){
+        cur += step;
+        if(cur >= target){ cur = target; clearInterval(timer); }
+        el.textContent = cur + (target >= 1000 ? '+' : '');
+      }, 28);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, {threshold:.3});
+    var statsBox = document.querySelector('.hero-stats');
+    if(statsBox){ io.observe(statsBox); }
+  }else{
+    runCounters();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 460){ backTop.classList.add('show'); }
+    else{ backTop.classList.remove('show'); }
+  });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+</body>
+  </html>
